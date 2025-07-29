@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Subhajeevan Rayapu</title>
+
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#home" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Education">Education</a>
+            </li>
+           
+          </ul>
+        </div>
+         <a href="#contact"><button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" >Contact</button></a>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Subhajeevan Rayapu</span>
+          </h2>
+          <p class="text-muted">
+            I'm A Web Developer having 3 years of experience in expertise of
+            creating website with fully responsive Also with backend part too.
+          </p>
+          <a href="#portfolio"><button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            My Work
+          </button></a>
+          
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/jeevan.jpeg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design</h4>
+              <p class="text-muted">
+               Web design involves creating visually appealing and user-friendly layouts for websites. It combines aesthetics, usability, and responsive design to ensure seamless user experiences across devices.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development</h4>
+              <p class="text-muted">
+                Web development is the creation and maintenance of websites and web applications using code and technology.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Ai-Agents</h4>
+              <p class="text-muted">
+                
+AI agents are autonomous systems that perceive their environment, make decisions, and take actions to achieve specific goals using artificial intelligence.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+ <!-- skill section starts -->
+<section class="skill mt-5 py-5" id="about">
+  <div class="container">
+    <div class="heading text-center mb-5" data-aos="fade-up">
+      <small>My Skills</small>
+      <h3>Proficiency Overview</h3>
+    </div>
+    <div class="row justify-content-center">
+      <!-- Skill Bars -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="skill-bar">
+          <h5>HTML & CSS <span>90%</span></h5>
+          <div class="bar">
+            <div class="bar-fill" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <h5>JavaScript <span>80%</span></h5>
+          <div class="bar">
+            <div class="bar-fill" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <h5>MySQL <span>80%</span></h5>
+          <div class="bar">
+            <div class="bar-fill" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <h5>ReactJS <span>75%</span></h5>
+          <div class="bar">
+            <div class="bar-fill" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <h5>MongoDB <span>85%</span></h5>
+          <div class="bar">
+            <div class="bar-fill" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <h5>Java <span>80%</span></h5>
+          <div class="bar">
+            <div class="bar-fill" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <h5>Python <span>75%</span></h5>
+          <div class="bar">
+            <div class="bar-fill" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <h5>Figma <span>80%</span></h5>
+          <div class="bar">
+            <div class="bar-fill" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Description -->
+      <div class="col-md-5" data-aos="fade-left">
+        <div class="heading mt-5 mt-md-3">
+          <h3>Beautiful & Unique Digital Experiences</h3>
+          <p class="text-muted">
+            I specialize in building modern, scalable, and maintainable web applications
+            with an emphasis on clean UI, performance, and best development practices.
+          </p>
+          <a
+            href="Rayapu Subhajeevan RESUME.pdf"
+            download="SampleCV"
+            class="c-btn h-btn mt-3 py-3 px-5 rounded-pill d-inline-block"
+            style="text-decoration: none; color: #fff;"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+     
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/Historicalplaces.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">2048 Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML</span>
+                <span class="badge bg-secondary badge-pill">CSS</span>
+                
+                <br />
+                <a href="https://github.com/Subhajeevan/Historical-places-in-India.git" class="link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/weatherforecast.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Converter App</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                
+                <br />
+                <a href="https://github.com/Subhajeevan/weather-forecast.git" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/Ecommers.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Dictionary</h4>
+                <span class="badge bg-secondary badge-pill">Node</span>
+                <span class="badge bg-secondary badge-pill">React</span>
+                <span class="badge bg-secondary badge-pill ">MongoDB</span
+                ><br />
+                <a href="https://github.com/Subhajeevan/E-commerce.git" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/cityzen.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">PicEditor App</h4>
+                <span class="badge bg-secondary badge-pill">Node</span>
+                <span class="badge bg-secondary badge-pill">React</span>
+                <span class="badge bg-secondary badge-pill ">MongoDB</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/ai-agent.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">TicTacToe Game</h4>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill">Langchain</span>
+                <span class="badge bg-secondary badge-pill ">Genai</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- Education section starts  -->
+    <section class="Education section-padding" id="Education">
+  <div class="container text-center">
+    <div class="heading">
+      <small>My Journey</small>
+      <h3>Education Timeline</h3>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content" data-aos="fade-right">
+          <h4>Bachelor of Technology in Computer Science</h4>
+          <small>2022 – Present | RGUKT RKV</small>
+          <p>Focused on software engineering, data structures, web development, and project-based learning.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content" data-aos="fade-left">
+          <h4>Higher Secondary Education</h4>
+          <small>2020 – 2022 | RGUKT RKV</small>
+          <p>Studied Mathematics, Physics, and Computer Science with distinction.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content" data-aos="fade-right">
+          <h4>Secondary Education</h4>
+          <small>2019 – 2020 | Sri GVS high School</small>
+          <p>Built foundational knowledge in science and technology with early exposure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>14-228,Church Compound,Gudur,Tirupati dist</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+91 6281043711</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>subhajeevan86@gmail.com</p>
+            </div>
+          </div>
+         
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+         <div class="vr"></div>
+        <a href="#Education">Education</a>
+        
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="https://www.linkedin.com/in/rayapu-subha-jeevan-b9aa392b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="rounded-pill linkedin">
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <button href="https://github.com/Subhajeevan" class="rounded-pill github">
+          <i class="bi bi-github"></i>
+        </button>
+        
+      </div>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
